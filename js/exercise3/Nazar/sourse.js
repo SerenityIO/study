@@ -1,5 +1,6 @@
 function clickk() {
-	//document.write("Ураааааа");
+
+	// :ToDo Конструктор Number не доцільно використовувати. В даному випадку використай + 
 	var a = Number(document.getElementById('a').value);
 	var b = Number(document.getElementById('b').value);
 	var c = Number(document.getElementById('c').value);
@@ -20,15 +21,18 @@ function clickk() {
 	}
 }
 function biquad() {
-	//document.write("Ураааааа");
+
+	// :ToDo Конструктор Number не доцільно використовувати. В даному випадку використай + 
 	var a = Number(document.getElementById('a').value);
 	var b = Number(document.getElementById('b').value);
 	var c = Number(document.getElementById('c').value);
+	// :ToDo Використовувати нестрогу перевірку слід у включеннях, тут потрібна строга нерівність !==
 	if (a != 0) {
 		var D = Math.pow(b, 2) - 4 * a * c;
 		if (D > 0) {
 			var t1 = (-b - Math.sqrt(D)) / (2 * a);
 			var t2 = (-b + Math.sqrt(D)) / (2 * a);
+			
 			if (t1 >= 0) {
 				var x1 = Math.sqrt(t1);
 				var x2 = -Math.sqrt(t1);
