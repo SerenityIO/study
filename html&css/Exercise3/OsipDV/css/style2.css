@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fly_machine {
+    background: white;
+    border: 1px solid red;
+    color: black;
+
+    margin: 10px;
+
+    width: 300px;
+    height: 50px;
+
+    text-indent: 2000px;
+    line-height: 50px;
+    text-align: center;
+    -webkit-transition: text-indent 1s ease-out;
+    -moz-transition: text-indent 1s ease-out;
+    -o-transition: text-indent 1s ease-out;
+    transition: text-indent 1s linear;
+    white-space: nowrap;
+}
+
+.fly_machine:hover {
+    color: black;
+    text-indent: 0;
+}
